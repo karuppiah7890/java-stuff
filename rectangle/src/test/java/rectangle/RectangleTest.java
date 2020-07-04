@@ -14,4 +14,9 @@ class RectangleTest {
         Rectangle rectangle = new Rectangle(0, 0);
         assertEquals(0, rectangle.area());
     }
+
+    @Test void shouldGiveOneWhenLengthIsOneAndBreadthIsOne() {
+        Rectangle rectangle = new Rectangle(1, 1);
+        assertEquals(1, rectangle.area());
+    }
 }
