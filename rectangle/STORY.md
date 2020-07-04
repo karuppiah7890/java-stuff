@@ -138,4 +138,62 @@ By getting lost on the Internet of links
 
 https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
 
+The method name for getting area is `area`. Let's see
+what other names I can think of or have seen:
 
+* areaOfRectangle
+* getArea
+* calculateArea
+* calculateAndGetArea
+* calculateAndGiveArea
+* giveArea
+* calculateAreaOfRectangle
+* calculateRectangleArea
+* area
+
+Now let's think about these names for a moment.
+The name `areaOfRectangle` has the word `Rectangle`
+which is a bit redundant in the sense that the method
+in itself is present in a class named `Rectangle`,
+so, it's not necessary, and we can avoid words like
+`Of`. 
+
+Next, the name `getArea`, it kind of implies
+that you are getting something - does it mean
+you have already calculated the area and are just
+getting it now? Also, isn't `get` a bit redundant because
+the contract of the method also clearly shows that
+the method returns something, which for the client means -
+it's getting something, so `get` word becomes
+unnecessary.
+
+Next, the name `calculateArea` tells
+a bit about the implementation of the method - which
+is that, it calculates the area when the client
+calls the method. What happens if tomorrow you want to
+calculate the area during object creation, in the
+constructor and store it in one of the fields and
+just return it when `calculateArea` is called?
+At that point your method name wouldn't make sense, 
+and you would have to change it, and changing
+method names which are part of a public API is
+a breaking change for the clients which is frowned
+upon unless extremely needed and one would have to
+bump up the major version of their software if they
+are using semantic versioning (semver.org). As
+we can see, adding implementation details to the
+method name can make change a bit harder. It's
+also better to hide implementation details from the
+client as the client does not care about implementation
+and is looking for results. 
+
+Similar things can be said about the names
+`calculateAndGetArea`, `calculateAndGiveArea`,
+`giveArea`, `calculateAreaOfRectangle`,
+`calculateRectangleArea` to reason out that they
+aren't that great. 
+
+Finally, the name `area`. It is quite simple and
+does not have the issues that were mentioned
+previously and shows intent quite well, respecting
+one of the 4 rules of simple design.
