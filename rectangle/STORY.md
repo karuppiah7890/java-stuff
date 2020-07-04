@@ -124,3 +124,18 @@ BUILD SUCCESSFUL in 707ms
 3 actionable tasks: 3 up-to-date
 ```
 
+I was reading the four rules of simple design
+here
+
+https://martinfowler.com/bliki/BeckDesignRules.html
+
+* Passes the tests
+* Reveals intention
+* No duplication
+* Fewest elements
+
+By getting lost on the Internet of links
+
+https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
+
+
