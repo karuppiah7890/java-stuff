@@ -197,3 +197,12 @@ Finally, the name `area`. It is quite simple and
 does not have the issues that were mentioned
 previously and shows intent quite well, respecting
 one of the 4 rules of simple design.
+
+Some more reading that I did
+
+https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names
+
+https://www.digdeeproots.com/articles/on/naming-as-a-process/ :
+  - 
+
+
