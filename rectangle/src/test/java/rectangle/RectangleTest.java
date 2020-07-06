@@ -10,23 +10,28 @@ class RectangleTest {
     // Note how the test function name does not contain
     // numbers like 0, but instead contain words to
     // represent the numbers "Zero"
-    @Test void shouldGiveZeroWhenLengthIsZeroAndBreadthIsZero() {
+    @Test void shouldGiveAreaAsZeroWhenLengthIsZeroAndBreadthIsZero() {
         Rectangle rectangle = new Rectangle(0, 0);
         assertEquals(0, rectangle.area());
     }
 
-    @Test void shouldGiveOneWhenLengthIsOneAndBreadthIsOne() {
+    @Test void shouldGiveAreaAsOneWhenLengthIsOneAndBreadthIsOne() {
         Rectangle rectangle = new Rectangle(1, 1);
         assertEquals(1, rectangle.area());
     }
 
-    @Test void shouldGiveTwoWhenLengthIsOneAndBreadthIsTwo() {
+    @Test void shouldGiveAreaAsTwoWhenLengthIsOneAndBreadthIsTwo() {
         Rectangle rectangle = new Rectangle(1, 2);
         assertEquals(2, rectangle.area());
     }
 
-    @Test void shouldGiveTwoWhenLengthIsTwoAndBreadthIsOne() {
+    @Test void shouldGiveAreaAsTwoWhenLengthIsTwoAndBreadthIsOne() {
         Rectangle rectangle = new Rectangle(2, 1);
         assertEquals(2, rectangle.area());
+    }
+
+    @Test void shouldGivePerimeterAsZeroWhenLengthIsZeroAndBreadthIsZero() {
+        Rectangle rectangle = new Rectangle(0, 0);
+        assertEquals(0, rectangle.perimeter());
     }
 }
