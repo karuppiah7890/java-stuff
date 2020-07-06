@@ -203,6 +203,13 @@ Some more reading that I did
 https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names
 
 https://www.digdeeproots.com/articles/on/naming-as-a-process/ :
-  - 
+  - https://www.digdeeproots.com/articles/naming-as-a-process/
+  - https://www.digdeeproots.com/articles/get-to-obvious-nonsense/    
+
+There are more articles in the series, but I'm going
+to read them later as this is digging more deep into
+naming, and I'm trying to get some breadth here first.
+
+Next I'm adding the perimeter method and adding tests for it!
 
 
