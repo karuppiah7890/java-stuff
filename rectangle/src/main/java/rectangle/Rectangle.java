@@ -14,6 +14,6 @@ public class Rectangle {
     }
 
     public int perimeter() {
-        return 0;
+        return 2 * length;
     }
 }
