@@ -39,4 +39,9 @@ class RectangleTest {
         Rectangle rectangle = new Rectangle(1, 0);
         assertEquals(2, rectangle.perimeter());
     }
+
+    @Test void shouldGivePerimeterAsTwoWhenLengthIsZeroAndBreadthIsOne() {
+        Rectangle rectangle = new Rectangle(0, 1);
+        assertEquals(2, rectangle.perimeter());
+    }
 }
