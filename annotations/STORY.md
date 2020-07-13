@@ -534,4 +534,6 @@ present in their super class. That's not the case by default.
 * `@Repeatable` - to use the annotation repeatedly on the same entity
 or thing
 
+---
 
+Another resource - https://www.geeksforgeeks.org/annotations-in-java/ 
