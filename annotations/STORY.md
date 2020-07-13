@@ -126,6 +126,7 @@ It says that the default is `RetentionPolicy.CLASS`
 
 I also read a bit here
 
+http://tutorials.jenkov.com/java/annotations.html
 http://tutorials.jenkov.com/java/annotations.html#retention
 
 There's a good example of how to create a simple unit test
@@ -509,3 +510,28 @@ Saw something about javac plugins or extensions or addons here
 https://www.baeldung.com/java-build-compiler-plugin
 
 While reading about annotations and java code processing
+
+---
+
+I also read about built in annotations like
+* `@Target` which can be used to mention that the custom annotations
+can be used or targeted only at certain types of things - like
+classes, interfaces, methods, fields, parameters, local variables,
+or even annotations
+
+* `@Documented`. When we create java documentation for the classes
+which have our custom annotation, by default the docs don't show the custom
+annotation present in the class, but when `@Documented` is used, the custom
+annotation shows up in the documentation.
+
+![Java Doc image 1](images/javadoc-1.png "Java Doc image 1") 
+
+![Java Doc image 2](images/javadoc-2.png "Java Doc image 2")
+
+* `@Inherited` - so that sub classes can inherit the custom annotations
+present in their super class. That's not the case by default.
+
+* `@Repeatable` - to use the annotation repeatedly on the same entity
+or thing
+
+
