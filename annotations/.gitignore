@@ -3,3 +3,6 @@
 
 # Ignore Gradle build output directory
 build
+
+stale_outputs_checked
+
