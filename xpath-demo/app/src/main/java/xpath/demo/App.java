@@ -3,12 +3,25 @@
  */
 package xpath.demo;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import org.xml.sax.SAXException;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
+import java.io.File;
+import java.io.IOException;
+
+public class App {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException,
+            XPathExpressionException, IOException {
+        if (args.length != 2) {
+            System.out.println("provide exactly two arguments");
+            System.exit(1);
+        }
+        var filePath = args[0];
+        var xPathExpression = args[1];
+        File file = new File(filePath);
+        XPathEvaluator xPathEvaluator = new XPathEvaluator(file);
+        String result = xPathEvaluator.evaluate(xPathExpression);
+        System.out.println(result);
     }
 }
